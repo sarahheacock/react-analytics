@@ -6,7 +6,21 @@
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
-    "webpack": "^4.20.2"
+    "chalk": "^2.4.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "build": "webpack --config config/webpack.config.js",
+    "dev": "node scripts/dev.js"
+  },
+  "dependencies": {
+    "chokidar": "^2.0.4",
+    "express": "^4.16.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "sockjs": "^0.3.19"
   }
 }
