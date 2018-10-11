@@ -12,7 +12,9 @@ module.exports = {
         path: path.resolve(__dirname, '../build'),
         // filename: 'devtool.js'
     },
-    mode: 'production',
+    mode: 'development',
+    // devtool: null,
+    devtool: 'cheap-module-source-map',
     module: {
         rules: [
             {

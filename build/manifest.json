@@ -8,9 +8,12 @@
         "persistent": true,
         "scripts": ["background.js"]
     },
+    "externally_connectable": {
+        "matches": ["http://localhost:8080/*"]
+    },
     "permissions": [
         "tabs",
-        "http://*/*",
-        "https://*/*"
+        "notifications",
+        "*://*/*"
     ]
 }
